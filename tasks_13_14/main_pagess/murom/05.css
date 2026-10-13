@@ -1,0 +1,108 @@
+#header {
+    width: 99%;
+    height: 225px;
+    padding: 10px;
+    }
+
+body {
+    background-color: #565449;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  background-color: #333333;
+  padding: 0;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 40%;
+  background-color: #c8c2b7;
+  opacity: 0.3;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 60%;
+  background-color: #565449;
+  padding: 20px;
+}
+
+/* Column container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+    padding: 20px
+}
+
+.gallery {
+  position: flex;
+  height: 965px;
+  gap: 20px;
+  padding: 20px
+}
+
+.gallery img {
+  position: flex;
+}
+
+.right {
+    float: right;
+  }
+
+.left {
+    float: left;
+}
+
+.top_pad {
+    padding-top: 20px;
+}
+
+.p {
+    color: white;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}

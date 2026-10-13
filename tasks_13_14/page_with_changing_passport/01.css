@@ -1,0 +1,13 @@
+body {
+    background-image: url("baby_blue_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+#for_click {
+    color: rgb(180, 106, 114);
+    text-decoration-line: underline;
+    text-decoration-color: rgb(180, 106, 114);
+    }

@@ -1,0 +1,246 @@
+#header {
+    width: 99%;
+    height: 225px;
+    padding: 10px;
+    }
+
+body {
+    background-color: #c7cea4;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  background-color: #8e8e6c;
+  padding: 0;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+/* Sidebar/left column */
+.side {
+  float: right;
+  flex: 40%;
+  background-color: #c8c2b7;
+  opacity: 0.4;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 60%;
+  background-color: #c7cea4;
+  padding-left: 20px;
+}
+
+/* Column container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+    padding: 20px
+}
+
+.gallery {
+  position: flex;
+  height: 965px;
+  gap: 20px;
+  padding: 20px
+}
+
+.gallery img {
+  position: flex;
+}
+
+.right {
+    float: right;
+  }
+
+.left {
+    float: left;
+}
+
+.top_pad {
+    padding-top: 20px;
+}
+
+.p {
+    color: white;
+}
+
+.pad_left {
+    margin-left: 20px;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+  table {
+      border-collapse: collapse;
+  }
+
+  th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      color: white
+  }
+
+#table1 {
+      background-image: url("./sv/table_back.jpg");
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 300px;
+    margin-left: 0;
+    clear: none;
+    padding-left: 40px;
+    float: right;
+      }
+
+#table {
+    height: 600px
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #8e8e6c;
+  height: 650px;
+}
+
+#forms {
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+
+ * {
+    box-sizing: border-box;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+    input[type=reset] {
+    background-color: #6a6a53;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit] {
+    background-color: #6a6a53;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #2d4530;
+  }
+
+  input[type=reset]:hover {
+    background-color: #2d4530;
+  }
+
+  .contain {
+    float: left;
+    border-radius: 5px;
+    background-color: #ede7eb;
+    padding: 20px;
+    margin-left: 20px
+  }
+
+  .contains {
+    border-radius: 5px;
+    background-color: #ede7eb;
+    padding: 20px;
+    height: 600px;
+    width: 45%;
+    float: right;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  /* Очистить поплавки после колонн */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Отзывчивый макет - когда экран меньше, чем 600 пикселей в ширину, сделать два столбца стека друг на друга, а не рядом друг с другом */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+  }
+

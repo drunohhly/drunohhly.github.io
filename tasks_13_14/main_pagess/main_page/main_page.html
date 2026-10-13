@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="04.css" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <ul>
+        <li><a class="active" href="#photos">Главная</a></li>
+        <li><a href="#murom">Муром</a></li>
+        <li><a href="#suzdal">Суздаль</a></li>
+        <li><a href="#vladimir">Владимир</a></li>
+        <li><a href="#sviyazhsk">Свияжск</a></li>
+        <li><a href="../../page_with_passport/page_with_passport.html">Страничка с паспортом</a></li>
+        <li><a href="../../page_with_changing_passport/14-15.html">Страничка с измененным паспортом</a></li>
+        <li><a href="../../task_with_solving/task_with_solving.html">Страничка с задачей</a></li>
+        <li><a href="https://radio.garden/visit/erkelenz/6PkPyWp0">Сайт с радио</a></li>
+        <li><a href="https://radio.garden/visit/erkelenz/6PkPyWp0"><img src="./radio.png" align="center" width="90"></a></li>
+    </ul>
+
+    <div id="photos" class="gallery" align="center" style="margin-left:3%">
+        <div class="wow">
+            <img src="./pictures/murom_cover.jpg" alt="Муром" class="gallery-item" onclick="openModal('modal1', 'Муром')" width="500" height="300">
+            <img src="./pictures/suzdal_cover.png" alt="Суздаль" class="gallery-item" onclick="openModal('modal2', 'Суздаль')" width="500" height="300">
+        </div>
+        <div class="wow">
+            <a style="cursor:pointer" href="../murom/murom.html" target="_self"><b>Муром</b></a>
+            <p>Суздаль</p>
+        </div>
+        <div class="wow">
+            <img src="./pictures/vladimir_cover.png" alt="Владимир" class="gallery-item" onclick="openModal('modal3', 'Владимир')" width="500" height="300">
+            <img src="./pictures/sviyazhsk_cover.jpg" alt="Свияжск" class="gallery-item" onclick="openModal('modal4', 'Казань')" width="500" height="300">
+        </div>
+        <div class="wow">
+            <p>Владимир</p>
+            <a style="cursor:pointer" href="../sviyazhsk/sviyazhsk.html" target="_self"><b>Свияжск</b></a>
+        </div>
+    </div>
+
+    <div id="murom" class="modal">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="./pictures/murom_cover.jpg" alt="Муром" class="modal-content" width="600" height="400">
+      <div class="caption"></div>
+    </div>
+
+    <div id="suzdal" class="modal">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="./pictures/suzdal_cover.png" alt="Суздаль" class="modal-content" width="600" height="400">
+      <div class="caption"></div>
+    </div>
+
+    <div id="vladimir" class="modal">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <img src="./pictures/vladimir_cover.png" alt="Владимир" class="modal-content" width="600" height="400">
+      <div class="caption"></div>
+    </div>
+
+    <div id="sviyazhsk" class="modal">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <img src="./pictures/sviyazhsk_cover.jpg" alt="Свияжск" class="modal-content" width="600" height="400">
+      <div class="caption"></div>
+    </div>
+<script src="main_page.js"></script>
+</body>
+</html>

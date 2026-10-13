@@ -1,0 +1,7 @@
+body {
+    background-image: url("baby_blue_back_with_stars.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }

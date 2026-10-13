@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="06.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- header -->
+    <div id="header" align="center" class="header">
+        <img src="./sv/img.png" height="200">
+    </div>
+
+    <!-- nav bar -->
+    <ul class="topnav">
+      <li><a href="#header" class="active">Home</a></li>
+      <li><a href="#">Vlog</a></li>
+        <li><a href="#visited_places">Visited places</a></li>
+      <li><a href="#table">Всех скорбящих радость</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="../../page_with_passport/page_with_passport.html"> Page with passport</a></li>
+        <li><a href="../../page_with_changing_passport/14-15.html">Page with changed passport</a></li>
+        <li><a href="../../task_with_solving/task_with_solving.html">Page with task</a></li>
+        <li><a href="https://radio.garden/visit/erkelenz/6PkPyWp0">Page with radio</a></li>
+        <li><a href="https://radio.garden/visit/erkelenz/6PkPyWp0"><img src="./sv/img_1.png" align="center" width="35"></a></li>
+        <li><a href="../main_page/main_page.html">Main page</a></li>
+    </ul>
+
+
+    <!-- right_column -->
+    <div class="side">
+            <h1 align="center" id="visited_places">Visited places</h1>
+            <ul>
+                <li>Казань
+                    <ol style="list-style-type: lower-roman;">
+                        <li>Кремль</li>
+                        <li>Мечеть Кул Шариф</li>
+                        <li>Спасо-Преображенский собор</li>
+                        <li>Черное озеро</li>
+                        <li>Голубые озера</li>
+                    </ol></li>
+                <li>Свияжск
+                    <ol style="list-style-type: lower-roman;">
+                        <li>Кремль</li>
+                        <li>Богородице-Успенский Свияжский мужской монастырь</li>
+                        <li>Собор во имя иконы Божией Матери Всех Скорбящих Радость</li>
+                        <li>Церковь в честь святителя Николая Чудотворца</li>
+                        <li>Собор в честь праздника Успения Пресвятой Богородицы</li>
+                    </ol></li>
+            </ul>
+            <p class="pad_left"><a href="#header">Home</a></p>
+
+    </div>
+
+    <!-- left_column -->
+        <div>
+            <h1 align="center" id="vlog">Vlog</h1>
+            <video autoplay muted loop playsinline width="865" height="505" class="pad_left">
+                <source src="./sv/kaza_n.mp4" type="video/mp4">
+                Ваш браузер не поддерживает HTML5 видео.
+            </video>
+            <p class="pad_left"><a href="#header">Home</a></p>
+        </div>
+
+        <div id="table">
+            <table id="table1" class="pad_left">
+                <tr>
+                    <td><a href="https://tatmitropolia.ru/all_publications/hramy_tatarstana/?ID=44822">Собор иконы Божией Матери «Всех скорбящих Радость»</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="error" src="./sv/img_2.png" width="220" height="220">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Годы возведения</th>
+                                <th>Архитектор</th>
+                            </tr>
+                            <tr>
+                                <td>1896-1906</td>
+                                <td>Фёдор Малиновский</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Первое упоминание об иконе Божией Матери «Всех Скорбящих Радосте» находится в описи того, что в XVIII веке досталось женской обители от упразднённой мужской. Свияжский список иконы представляет собой копию известной московской святыни, прославившейся в XVII веке</td>
+                    <td>
+                        <img alt="error" src="./sv/img_3.png" width="220" height="220">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    <p class="pad_left"><a href="#header">Home</a></p>
+
+    <!-- Footer -->
+    <footer>
+      <div id="forms" class="contain">
+          <h1>Tell us about you</h1>
+          <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <p>Для поисковика:<input type="hidden" name="q" value="search"></p>
+            <div class="row">
+                <div class="col-25">
+                  <label for="fname">Имя</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Ваше Имя..">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="sname">Фамилия</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="sname" name="secondname" placeholder="Ваша фамилия..">
+                </div>
+              </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="group">Группа</label>
+                </div>
+                <div class="col-75">
+                  <input type="number" id="group" name="group" placeholder="Ваша группа..">
+                </div>
+            </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="phone">Номер телефона</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="phone" name="phone" placeholder="+7">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Почта</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email" name="email" placeholder="Ваша почта..">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="date">Дата</label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="date" name="date" value='2026-10-13'>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <p> Тип записи в файл:<select name="010_mode" class="col-75">
+                      <OPTION value="a">a - дозаписать в файл</OPTION>
+                      <OPTION value="w">w - очисить файл и записать в файл</OPTION>
+                    </select></p>
+                </div>
+              </div>
+
+                <input type="hidden" name="function" value="page">
+                <input type="hidden" name="page_id" value="3">
+
+                <p>
+                    <input type="Reset" name="Reset" value="Обновить">
+                    <input type="Submit" name="submit" value="Отправить">
+                </p>
+          </form>
+      </div>
+
+        <div id="form2" class="contains">
+          <h1>Оставте заявку на подбор тура</h1>
+          <form action="https://www.bing.com/search?" id="UserEnter1" name="UserEnter" target="_blank">
+            <p>Для поисковика:<input type="hidden" name="q" value="search"></p>
+            <div class="row">
+                <div class="col-25">
+                  <label for="name1">Имя</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="name1" name="firstname" placeholder="Ваше Имя..">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="phone1">Номер телефона</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="phone1" name="phone" placeholder="+7">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="email1">Почта</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email1" name="email" placeholder="Ваша почта..">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="date1">Дата</label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="date1" name="date" value='2026-10-13'>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="num_of_people">Количество людей</label>
+                </div>
+                <div class="col-75">
+                  <input type="number" id="num_of_people" name="date" placeholder="Введите кол-во..">
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                    <p>Условия:
+                        <input type="Radio" name="place" value="all-inclusive">Все включено
+                        <input type="Radio" name="place" value="another-option" checked>Другой вариант
+                    </p>
+                </div>
+              </div>
+
+              <p>Рассматриваемые варианты:
+                    <input type="Checkbox" name="experience" checked>Европа
+                    <input type="Checkbox" name="experience" checked>Азия
+                    <input type="Checkbox" name="experience" checked>Америка
+                </p>
+
+
+              <p>Пароль: <input type="Password" name="password" size=9 value="123"></p>
+
+                <input type="hidden" name="function" value="page">
+                <input type="hidden" name="page_id" value="3">
+
+                <p>
+                    <input type="Reset" name="Reset" value="Обновить">
+                    <input type="Submit" name="submit" value="Отправить">
+                </p>
+          </form>
+      </div>
+    </footer>
+
+
+
+
+</body>
+</html>

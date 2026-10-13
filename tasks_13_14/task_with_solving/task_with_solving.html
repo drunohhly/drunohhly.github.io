@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <link href="03.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../../test_1/obzor/photo_for_the_main_page/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Алгоритмическая задача</h1>
+        <form name="UserEnter" action="https://www.bing.com/search?" id="UserEnter" target="_blank">
+            <div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="input">Ввод для поисковика</label>
+                    </div>
+                    <div class="col-75">
+                      <input id = "input" type="text" name="q" value="search" placeholder="Ввод...">
+                    </div>
+              </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="task">Формулировка задачи</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="task" name="formulation" style="height:100px">Дано вещественное число A. x = 0 при a > 100; x = a при a < 61, в противном случае x = a**4.</textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="a">A</label>
+                    </div>
+                    <div class="col-75">
+                      <input id="a" name="a" type="number" value="87.3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="result">Результат решения задачи</label>
+                    </div>
+                    <div class="col-75">
+                      <input id="result" name="result" value="не определен">
+                    </div>
+                </div>
+            </div>
+            <div class="row" align="right">
+                <input id="verify" type="button" value="Проверить" class="button button5">
+                <input id="send" type="button" value="Отправить" class="button button5">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./task_with_solving.js"></script>
+</html>
