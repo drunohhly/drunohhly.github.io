@@ -15,21 +15,4 @@ function closeModal(modalId) {
   }, 300);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('ul.topnav a');
-    const sections = document.querySelectorAll('div[id], section[id]');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.id;
-                links.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-                });
-            }
-        });
-    }, { threshold: 0.5 });   // 0.5 = раздел считается активным, когда видно 50% его высоты
-
-    sections.forEach(section => observer.observe(section));
-});
 

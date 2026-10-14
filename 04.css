@@ -111,10 +111,6 @@ h1 {
   }
 }
 
-.active {
-    background-color: lightblue;
-    color: black;
-  }
 
 .wow {
     display: flex;
@@ -162,11 +158,18 @@ ul.topnav li a {
   text-decoration: none;
 }
 
+
+
 /* Change color on hover */
 ul.topnav li a:hover {
   background-color: #dddddd;
   color: black;
 }
+
+ul.topnav li a.active {
+    background-color: lightblue;
+    color: black;
+  }
 
 
   li a:hover:not(.active) {
