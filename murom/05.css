@@ -10,8 +10,6 @@ body {
     padding: 0;
 }
 
-/* nav bar */
-
 * {
   box-sizing: border-box;
 }
@@ -22,12 +20,13 @@ header {
   text-align: center;
 }
 
+
 /* Style the topnav */
 ul.topnav {
   display: flex;
   list-style-type: none;
   margin: 0;
-  background-color: #333333;
+  background-color: black;
   padding: 0;
 }
 
@@ -41,6 +40,51 @@ ul.topnav li a {
 
 /* Change color on hover */
 ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+  li a.active {
+    background-color: lightblue;
+    color: black;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+
+/* nav bar */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the topnav */
+ul.topnavs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  background-color: #333333;
+  padding: 0;
+}
+
+/* Style links in topnav */
+ul.topnavs li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnavs li a:hover {
   background-color: #dddddd;
   color: black;
 }

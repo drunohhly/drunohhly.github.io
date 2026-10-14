@@ -11,3 +11,35 @@ body {
     text-decoration-line: underline;
     text-decoration-color: rgb(180, 106, 114);
     }
+
+    /* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  background-color: black;
+  padding: 0;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+  li a.active {
+    background-color: lightblue;
+    color: black;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
