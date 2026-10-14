@@ -16,17 +16,20 @@ function closeModal(modalId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const current = window.location.pathname;
-    document.querySelectorAll('ul.topnav a').forEach(link => {
-        const href = link.getAttribute('href');
-        // если текущий путь начинается с href ссылки
-        if (href !== '/' && current.startsWith(href)) {
-            link.classList.add('active');
-        }
-        // отдельно для главной
-        if (href === '/' && (current === '/' || current.endsWith('/index.html'))) {
-            link.classList.add('active');
-        }
-    });
+    const links = document.querySelectorAll('ul.topnav a');
+    const sections = document.querySelectorAll('div[id], section[id]');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                links.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                });
+            }
+        });
+    }, { threshold: 0.5 });   // 0.5 = раздел считается активным, когда видно 50% его высоты
+
+    sections.forEach(section => observer.observe(section));
 });
 
